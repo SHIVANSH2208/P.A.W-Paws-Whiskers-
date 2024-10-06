@@ -1,0 +1,212 @@
+.bg-header-offwhite {
+  --tw-bg-opacity: 0.5;
+  background-color: #f9d6b7;
+}
+
+.text-custom-heading {
+  --tw-bg-opacity: 0.8;
+  color: rgb(51 50 49 / var(--tw-bg-opacity));
+}
+
+#switch{
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#switch.dark-theme {
+  color: rgb(255, 255, 255);
+}
+
+#switch.light-theme {
+  color: rgb(62, 62, 62);;
+}
+
+
+#switch.turn-red-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: red;
+}
+
+#switch.turn-yellow-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 177 0 / var(--tw-text-opacity));
+}
+
+.bg-header-orange-light {
+  --tw-bg-opacity: 0.4;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 195 122 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 180 92 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.bg-header-orange-light:hover {
+  --tw-bg-opacity: 0.7;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.turn-white-hover {
+  color: rgb(62, 62, 62);
+}
+
+.turn-white-hover:hover {
+  color: rgb(255, 255, 255);
+  transition-duration: 0.2s;
+}
+
+.bg-color-btn {
+  background-color: rgb(255, 193, 117);
+  border: 2px white solid;
+}
+
+.bg-color-btn:hover {
+  background-color: rgb(255, 172, 70);
+  transition-duration: 0.3s;
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.logo-border {
+  border: 2px solid black;
+  border-radius: 9999px;
+}
+
+.logo-size {
+  width: 80px;
+}
+
+/*make the icons white only for darker theme*/
+.text-white .icon {
+  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
+    brightness(117%) contrast(100%);
+}
+
+#logo{
+  transition: 0.3s ease;
+}
+
+#logo:hover{
+  transform: scale(1.05);
+}
+
+.mission-dark{
+  color: rgb(62, 62, 62);
+  cursor: default;
+}
+
+.mission-light{
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+#theme-toggle{
+  cursor: pointer;
+}
+
+/* make the header sticky on scroll */
+#header {
+	position: fixed;
+	top: 0;
+	transition: 0.25s;
+	width: 100%;
+	z-index: 100;
+}
+
+.add_border{
+  border-bottom: 2px solid #ae642c;
+  /* give a bottom shadow */
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.nav-hidden{
+	top: -100px;
+}
+
+#navbar{
+  height: fit-content;
+}
+
+.goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
+  display: none!important;
+}
+
+.goog-te-gadget {
+  font-size:0px !important;
+  margin-bottom: -27px;
+}
+
+.skiptranslate goog-te-gadget #text{
+  display: none!important;
+}
+
+
+/* navbar changed responsiveness so the text doesn't get too big in the navbar */
+
+@media screen and (max-width: 1190px) {
+  #navbar{
+    white-space: nowrap;
+    
+  }
+  #navbar ul {
+    font-size: 15px;
+  }
+}
+.nav-items{
+  display: flex;
+  gap: 2rem;
+  padding: 0 4rem;
+  
+}
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: hwb(37 38% 0%);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  color: hwb(37 38% 0%);
+  cursor: pointer;
+  
+}
+
+.nav-items div{
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:  5s;
+  
+}
+
+.remover::after{
+  content: none;
+}
+
+.x-text :hover{
+  background-color:#8b4513;
+}
