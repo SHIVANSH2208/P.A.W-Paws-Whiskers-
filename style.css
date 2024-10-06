@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
+
+  .contributors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131c2b;
+    padding-bottom: 2.75rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .contributors-container h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2.5rem 0;
+  }
+
+  .contributors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 8%;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    width: 4rem;
+  }
+
+  .contribute-btn {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: 1.5px;
+    background-color: #003479;
+  }
+
+  .contribute-btn img {
+    width: 2.2rem;
+    color: black;
+    margin-right: 5px;
+  }
+
+  /* back to top button */
+  #bttbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    width: 55px;
+    transition: all 0.5s ease;
+    display: none;
+  }
+
+  /* Add this CSS code to hide the meet cards initially */
+  .main-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .hover-effect img {
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-effect img:hover {
+    opacity: 0.75;
+  }
+
+  /*-------sos button ---------*/
+  #mySBtn {
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red !important;
+    /* Set a background color */
+    color: white !important;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 25px !important;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+  }
+
+  #mySBtn:hover {
+    background-color: #fff !important;
+    /* Add a dark-grey background on hover */
+    color: red !important;
+    font-weight: 700 !important;
+  }
+
+  /*-----end of sos button----*/
+
+  .contact-form-container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    
+    
+  }
+}
+
+/* Add this CSS code to hide the About content initially */
+#about .fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.contributors {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contributors-container {
+  padding-top: 20px;
+}
+
+.hover-button {
+  /* Button styles */
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(68,38,0);
+  color: #fff;
+  cursor: pointer;
+  background: #895a21;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-button:hover {
+  /* Hover styles */
+  background: #ffbb00;
+  color: #000000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  animation: 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.anima-fade-in-right {
+  animation: fade-in-right 0.5s ease-in-out;
+}
+
+@keyframes scroll-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.scroll-fade-in {
+  animation: scroll-fade-in 0.5s ease-in-out both;
+}
+
+.scroll {
+  animation: scroll 0.5s ease-in-out both;
+}
+
+/*-----end of sos button----*/
+/* copy right  */
+#copyright {
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+  background-color: black;
+  color: white;
+}
+
+#facebook {
+}
+.facebook-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.facebook-icon:hover {
+  fill: blue;
+}
+.instagram-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.instagram-icon:hover {
+  fill: rgb(251, 72, 254); 
+}
+.github-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.github-icon:hover {
+  fill: #6e5494; 
+}
+
+#google_translate_element select {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 8px;
+  padding-inline: 12px;
+  outline: none;
+  border: brown;
+  color: gray;
+  font-family: "Poppins";
+}
+#google_translate_element div {
+  color: rgb(255, 255, 255);
+}
+#google_translate_element span {
+}
+
+.copyright1{
+  margin-left: 50%;
+}
+
+
+
+
