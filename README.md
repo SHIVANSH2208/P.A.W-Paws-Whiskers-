@@ -1,5 +1,5 @@
 # P.A.W-Paws-Whiskers-
-# HackIndia-Spark-6---CLUMZY-CODERZZ
+# CLUMZY-CODERZZ
 ## Open Source Programs
 <p align="center"> P.A.W is ready for HacktIndia Hackathon</p>
  <a href="https://hackindia.xyz//">
