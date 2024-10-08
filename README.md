@@ -1,7 +1,7 @@
 # P.A.W-Paws-Whiskers-
 # CLUMZY-CODERZZ
 ## Open Source Programs
-<p align="center"> P.A.W is ready for HacktIndia Hackathon</p>
+<p align="center"> P.A.W is ready for HackIndia Hackathon</p>
  <a href="https://hackindia.xyz//">
  <img width="1200" alt="Email Banners-Dark" src="./Assets\Images\HackIndia Hackathon Poster.jpg">
  </a>
@@ -46,12 +46,6 @@ This inspired us to create a comprehensive platform that not only streamlines pe
 ----
 
 
-## Watch the video:
-
-For a brief explanation about P.A.W, you can watch the following video.
-
-[<img src="Assets\Images\logo.png"" width="50%">]()
- 
 Additional features:
 - All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
 - The language of the website can also be translated to different languages by using the Google Translate button in the top right corner of the header.
